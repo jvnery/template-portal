@@ -25,12 +25,19 @@ a{
 }
 
 .nav-link:hover{
-    color: #3AABF5;
+    color: #0056a1;
 }
 
 .header{
-    padding: 54px 0;
+    padding: 54px 120px;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.15);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .hpc-logo{
@@ -39,7 +46,7 @@ a{
     gap: 16px;
 }
 
-.header h2{
+.header span{
     color: #000;
     font-size: 25px;
     font-weight: 400;
@@ -53,6 +60,98 @@ a{
     color: #00294D;
     font-weight: 700;
     width: 115px;
+}
+
+.header .menu{
+    display: flex;
+    gap: 32px;
+}
+
+.header .menu a{
+    color: #000;
+    font-size: 20px;
+}
+
+.header .menu a:hover{
+    color: #00294D;
+    border-bottom: 2px solid #00294D;
+}
+
+.header .menu a.active{
+    color: #00294D;
+    font-weight: 700;
+    border-bottom: 2px solid #00294D;
+}
+
+.header .button{
+    background: #00294D;
+    color: #FFF;
+    padding: 6px 32px;
+    border-radius: 5px;
+}
+
+.header .button:hover{
+    background-color: #0056a1;
+}
+
+.content{
+    padding: 100px 0 120px;
+}
+
+.content h2{
+    color: #00294D;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #00294D;
+    padding: 40px 140px 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer h6{
+    color: #D0DAF5;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+footer .grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer .grid .info{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+}
+
+footer .grid .info .item{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer .grid .info .item .icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 @media (min-width: 1400px) {
